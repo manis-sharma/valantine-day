@@ -12,7 +12,8 @@
 
 Create a beautiful, interactive love letter website for your special someone! This romantic website template features elegant animations, polaroid photo galleries, and heartfelt designs that will make your Valentine's Day unforgettable.
 
-**✨ Live Demo:** `https://YOUR-GITHUB-USERNAME.github.io/valentine-day/`
+**✨ Live Demo:** `https://vdayhub.vercel.app/`
+
 
 ---
 
@@ -60,7 +61,7 @@ Create a beautiful, interactive love letter website for your special someone! Th
 2. **Go to Settings** → **Pages**
 3. **Select** `main` branch and `/ (root)` folder
 4. **Save** and wait a few minutes
-5. **Visit** `https://YOUR-USERNAME.github.io/valentine-day/`
+5. **Visit** `https://vdayhub.vercel.app/`
 
 ### Option 2: Download and Customize Locally
 
@@ -85,11 +86,6 @@ Find these lines in `index.html`:
 ```html
 <img class="polaroid-image" src="YOUR-PHOTO-URL-HERE" alt="Memory 1">
 ```
-
-**How to get image URLs:**
-1. Upload photos to [Imgur](https://imgur.com), Google Drive, or GitHub
-2. Get the direct image link
-3. Replace `YOUR-PHOTO-URL-HERE` with your link
 
 ### ✍️ Editing the Love Letter
 
@@ -231,7 +227,7 @@ Having issues? Here's how to get help:
 
 ## 🔗 Related Projects
 
-- [Romantic Poetry Generator](#)
+- [](#)
 - [Love Calculator](#)
 - [Couple Photo Collage Maker](#)
 - [Anniversary Countdown Timer](#)
@@ -246,8 +242,9 @@ Having issues? Here's how to get help:
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=YOUR-USERNAME/valentine-day&type=Date)](https://star-history.com/#YOUR-USERNAME/valentine-day&Date)
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=manis-sharma/valentine-day&type=date&legend=top-left)](https://www.star-history.com/manis-sharma/valentine-day&type=date&legend=top-left)
 ---
 
 ## 💝 Made with Love
@@ -260,9 +257,9 @@ Created with ❤️ for lovers around the world. May your Valentine's Day be fil
 
 ### 📊 Stats
 
-![GitHub stars](https://img.shields.io/github/stars/YOUR-USERNAME/valentine-day?style=social)
-![GitHub forks](https://img.shields.io/github/forks/YOUR-USERNAME/valentine-day?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/YOUR-USERNAME/valentine-day?style=social)
+![GitHub stars](https://img.shields.io/github/stars/manis-sharma/valentine-day?style=social)
+![GitHub forks](https://img.shields.io/github/forks/manis-sharma/valentine-day?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/manis-sharma/valentine-day?style=social)
 
 ---
 
