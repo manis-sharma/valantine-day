@@ -227,7 +227,7 @@ Having issues? Here's how to get help:
 
 ## 🔗 Related Projects
 
-- [](#)
+- [Impress Your Crush](http://github.com/manis-sharma/impress-your-crush)
 - [Love Calculator](#)
 - [Couple Photo Collage Maker](#)
 - [Anniversary Countdown Timer](#)
