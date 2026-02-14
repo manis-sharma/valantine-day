@@ -1,4 +1,4 @@
-        function goToPage(pageNumber) {
+  function goToPage(pageNumber) {
             // Hide all pages
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => page.classList.remove('active'));
@@ -13,8 +13,38 @@
 
         function toggleEnvelope() {
             const envelope = document.getElementById('envelope');
+            const hint = document.querySelector('.tap-hint');
+            
+            // Toggle between open and closed
             envelope.classList.toggle('open');
+            
+            // Create hearts on every interaction
             createFloatingHearts();
+            
+            // Update hint text based on state
+            if (envelope.classList.contains('open')) {
+                // Just opened
+                setTimeout(() => {
+                    if (hint) {
+                        hint.style.opacity = '0';
+                        setTimeout(() => {
+                            hint.textContent = '💕 Tap again to close 💕';
+                            hint.style.opacity = '1';
+                        }, 300);
+                    }
+                }, 800);
+            } else {
+                // Just closed
+                setTimeout(() => {
+                    if (hint) {
+                        hint.style.opacity = '0';
+                        setTimeout(() => {
+                            hint.textContent = '✨ Tap the envelope to read your letter ✨';
+                            hint.style.opacity = '1';
+                        }, 300);
+                    }
+                }, 300);
+            }
         }
 
         function createFloatingHearts() {
@@ -42,4 +72,3 @@
         window.onload = function() {
             createFloatingHearts();
         };
-    

@@ -6,7 +6,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #78f9ce 0%, #fd96e5 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -314,6 +314,7 @@
             background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
 
         .envelope-flap {
@@ -324,7 +325,7 @@
             height: 50%;
             background: linear-gradient(135deg, #fda085 0%, #f6d365 100%);
             transform-origin: top;
-            transition: transform 0.6s ease;
+            transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
             border-radius: 10px 10px 0 0;
             clip-path: polygon(0 0, 50% 60%, 100% 0);
             z-index: 3;
@@ -336,23 +337,27 @@
 
         .letter {
             position: absolute;
-            top: 10%;
+            top: 15%;
             left: 10%;
             width: 80%;
-            height: 90%;
+            height: 75%;
             background: #fffef7;
             border-radius: 5px;
-            padding: 40px 30px;
+            padding: 30px 25px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.6s ease;
-            transform: translateY(0);
             overflow-y: auto;
             z-index: 2;
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, 
+                        transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s,
+                        box-shadow 0.6s ease 0.3s;
         }
 
         .envelope.open .letter {
-            transform: translateY(-120%);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            opacity: 1;
+            transform: scale(1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
         .letter-content {
@@ -360,6 +365,14 @@
             color: #333;
             line-height: 2;
             font-size: 1.05em;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s;
+        }
+
+        .envelope.open .letter-content {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .letter-content p {
@@ -377,9 +390,11 @@
         .tap-hint {
             text-align: center;
             color: #999;
-            font-size: 0.9em;
+            font-size: 0.95em;
             margin-top: 20px;
             animation: pulse 2s infinite;
+            font-style: italic;
+            transition: opacity 0.3s ease;
         }
 
         @keyframes pulse {
@@ -558,4 +573,3 @@
                 transform: translateY(-100px) rotate(360deg);
             }
         }
- 
